@@ -1,5 +1,25 @@
-<%= @post.title %><br>
-<%= @post.content %>
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+		<header>
+			<p class+"date"><%= @post.created_at.strftime('%A, %b %d') %></p>
+			<h1><%= @post.title %></h1>
+			<hr>
+		</header>
+		<div id="content">
+			<%= @post.content %>
+		</div>
+
+		<hr>
+		<div id="share_box">
+			<p>Share the Do List</p>
+			<a href="#"><i class="fa fa-twitter"</i></a>
+			<a href="#"><i class="fa fa-github"</i></a>
+			<a href="#"><i class="fa fa-dribble"</i></a>
+
+		</div>
+
+		<hr>
+
+	</div>
 
 <br>
 <br>
